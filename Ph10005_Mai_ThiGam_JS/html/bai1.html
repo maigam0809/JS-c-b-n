@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bai1.css">
+  <script>
+
+    var anhAr=[];
+    var currentIndex=0;
+    function loadAnh(){
+      var i;
+      for( i=1;i<=20;i++){
+        anhAr[i]=new Image();
+        anhAr[i].src="../image/anh"+i+".jpg";
+      }
+      document.getElementById("hello").innerHTML="Ảnh "+currentIndex+"/20";
+      
+     
+    }
+    
+
+    function next(){
+      if(currentIndex<anhAr.length-1){
+        currentIndex++;
+        document.getElementById("kfc").src=anhAr[currentIndex].src;
+      }else{
+        currentIndex=1;
+        document.getElementById("kfc").src=anhAr[currentIndex].src;
+        
+      }
+      document.getElementById("hello").innerHTML="Ảnh "+currentIndex+"/20";
+    }
+
+
+    function back(){
+      if(currentIndex > 1){
+        currentIndex--;
+        document.getElementById("kfc").src=anhAr[currentIndex].src;
+       
+      }else {
+        currentIndex=anhAr.length-1;
+        document.getElementById("kfc").src=anhAr[currentIndex].src;
+        
+      }
+      document.getElementById("hello").innerHTML="Ảnh "+currentIndex+"/20";
+      
+    }
+  </script>
+</head>
+<body onload="loadAnh()">
+  <div class="container" >
+      <img id="kfc" src="../image/anh1.jpg" alt="">
+      <input class="dots" type="button" value="back" onclick="back();">
+      <input class="dots" type="button" value="next" onclick="next();">
+      <div id="hello">
+
+      </div>
+  </div>
+   
+  
+    
+  </body>
+</html>

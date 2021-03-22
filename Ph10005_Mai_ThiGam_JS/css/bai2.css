@@ -1,0 +1,47 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 500px;
+  margin: 20px auto;
+}
+.container{
+  width: 100%;
+  height: auto;
+}
+.container h3{
+  color:darkslateblue;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container label{
+  width: 100%;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container input{
+  margin:10px 20px;
+  margin-left:0px;
+  width: calc(100% - 20px);
+  padding:10px;
+}
+.container .form_group{
+  width: 100%;
+}
+#gt{
+  border: 1px solid gray;
+  margin-right: 20px;
+}
+#so_thich{
+  border: 1px solid gray;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+input[type='submit']{
+  margin-top: 10px;
+}
+
+

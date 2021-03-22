@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    select {
+      margin-bottom: 20px;
+      padding: 20px;
+      height: 30px;
+      width: 100px;
+    }
+
+    .d-none {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <select id="select">
+
+    </select>
+    <hr>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox" id="selectAll">
+          </th>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Thành tiền</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbContent">
+       
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">Tổng</td>
+          <td id="sumary">0</td>
+        </tr>
+      </tfoot>
+    </table>
+
+  </div>
+
+  <script src="../js/bai3.js"></script>
+</body>
+
+</html>

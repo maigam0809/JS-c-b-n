@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bai2.css">
+
+  <script src="../js/bai2.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h3>ĐĂNG KÝ THÀNH VIÊN</h3>
+
+    <form action="#" onsubmit="return validateForm();" name="hello">
+
+      <div class="form_group">
+        <label for="">Mã sinh viên</label>
+        <input type="text" name="ma_sinh_vien" id="msv">
+      </div>
+
+      <div class="form_group">
+        <label for="">Họ và tên:</label>
+        <input type="text" name="ho_ten" id="ho_ten">
+      </div>
+
+      <div class="form_group">
+        <label for="">Email</label>
+        <input type="text" name="email" id="email" placeholder="Nhập email..." required>
+      </div>
+
+
+
+      <div class="form_group">
+        <label>Giới tính:</label>
+        <div id="gt">
+          Nam <input type="radio" value="Nam" name="gender" />
+          Nữ <input type="radio" value="Nu" name="gender" />
+        </div>
+      </div>
+
+      <label for="">Giới tính:</label>
+      <div class="form_group">
+        <label for="">Sở thích</label>
+        <div id="so_thich">
+          <input type="checkbox" name="so_thich"> Đọc sách
+          <input type="checkbox" name="so_thich">Du lịch
+          <input type="checkbox" name="so_thich">Âm nhạc
+          <input type="checkbox" name="so_thich">Thực phẩm
+          <input type="checkbox" name="so_thich">Khác
+        </div>
+      </div>
+
+
+      <div class="form_group">
+        <label for="">Quốc tịch</label>
+        <select id="country">
+          <option selected="selected" value="0">Chọn quốc tịch</option>
+          <option value="1">Viet Nam</option>
+          <option value="1">Anh</option>
+          <option value="1">Lào</option>
+          <option value="1">
+            Trung Quốc
+          </option>
+          <option value="1">Pháp</option>
+        </select>
+      </div>
+
+      <div class="form_group">
+        <label for="">Ghi chú</label>
+        <textarea cols="50" rows="10"></textarea>
+      </div>
+
+      <input type="submit" value="submit">
+    </form>
+
+  </div>
+
+
+
+</body>
+
+</html>
